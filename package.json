@@ -1,0 +1,15 @@
+{
+  "name": "crumple-toss",
+  "version": "1.0.0",
+  "description": "Crumple Toss: a WebGL paper-toss game that mounts into any page.",
+  "main": "dist/crumple-toss.min.js",
+  "scripts": {
+    "build": "esbuild src/crumple-toss.js --bundle --minify --format=iife --global-name=CrumpleToss --target=es2018 --legal-comments=inline --outfile=dist/crumple-toss.min.js",
+    "hash": "node -e \"const c=require('crypto');console.log('sha384-'+c.createHash('sha384').update(require('fs').readFileSync('dist/crumple-toss.min.js')).digest('base64'))\""
+  },
+  "dependencies": {
+    "esbuild": "^0.24.0",
+    "three": "^0.128.0"
+  },
+  "private": true
+}
