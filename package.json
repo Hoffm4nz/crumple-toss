@@ -1,6 +1,6 @@
 {
   "name": "crumple-toss",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Crumple Toss: a WebGL paper-toss game that mounts into any page.",
   "main": "dist/crumple-toss.min.js",
   "scripts": {

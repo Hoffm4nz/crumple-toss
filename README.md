@@ -8,7 +8,7 @@ Built with three.js r128, bundled into one file that mounts itself into any page
 
 ```html
 <div data-crumple-toss data-lock-scroll></div>
-<script src="https://cdn.jsdelivr.net/gh/Hoffm4nz/crumple-toss@v1.0.1/dist/crumple-toss.min.js"
+<script src="https://cdn.jsdelivr.net/gh/Hoffm4nz/crumple-toss@v1.0.2/dist/crumple-toss.min.js"
         integrity="sha384-…" crossorigin="anonymous" defer></script>
 ```
 
@@ -35,7 +35,7 @@ You can also mount it from script: `CrumpleToss.mount(element, { font: 'Satoshi'
 npm install
 npm run build        # writes dist/crumple-toss.min.js
 npm run hash         # prints the integrity value for the script tag
-git commit -am "…" && git tag v1.0.2 && git push --follow-tags
+git commit -am "…" && git tag v1.0.3 && git push --follow-tags
 ```
 
 Then update the version in the script URL and the `integrity` value in Webflow. Always point Webflow at a tag, never a branch: the integrity hash makes the browser refuse a file that differs from the one you approved.
